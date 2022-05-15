@@ -29,9 +29,11 @@ Compiling, Training, and Evaluating the Model
 - What steps did you take to try and increase model performance?
     - In my first attempt to increase model performance, I created six hidden layers instead of just two, and I gave each layer 6, 6, 3, 3, 3, and 3 neurons, respectively. This hardly had any impact on the model, only increasing the accuracy to 72.6%.
     - In my second attempt to increase model performance, I reduced the hidden layers back to just two, but increased the amount of neurons in each hidden layer to 14 and 8, respectively. This also hardly made any impact on the model, as the accuracy for this attempt was 72.5%
-    - In my third attempt to increase model performance, I switched the activation function from "relu" to "leaky_relu." Once again, the results were underwhelming, and the accuracy for this model was 72.8%
+    - In my third attempt to increase model performance, I increased the hidden layersswitched the activation function from "relu" to "leaky_relu." Once again, the results were underwhelming, and the accuracy for this model was 72.8%
 
 
 
 ## Summary
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation
+Summarize the overall results of the deep learning model. 
+
+Overall, the model worked fairly well, especially if our target accuracy was 75%. Each model was very close to this treshold, however, none of them reached it. In fact, each model had very similar results, with only very marginal differences between them. As a result, I would recommend a different approach to training this model in the future. Given that adding more neurons to our hidden layers didn't increase accuracy and neither did adding more hidden layers, it is reasonable to assume some of our input variables are limiting the results of this model. I would recommend removing data from the model that it might be fixating too much on that is less relevant for training an accurate model. 
