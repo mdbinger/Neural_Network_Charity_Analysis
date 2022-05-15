@@ -13,7 +13,7 @@ Using Pandas and the Scikit-Learn’s StandardScaler(), I preprocessed the datas
 
 ## Results
 
-Data Preprocessing
+#### Data Preprocessing
 - What variable(s) are considered the target(s) for your model?
     - "IS_SUCCESSFUL" was our target for the model, as we wanted to know if charity applicants were considered successful or not
 - What variable(s) are considered to be the features for your model?
@@ -21,16 +21,32 @@ Data Preprocessing
 - What variable(s) are neither targets nor features, and should be removed from the input data?
     - EID and NAME were both dropped from the dataset as they were not targets nor features
 
-Compiling, Training, and Evaluating the Model
+#### Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
     - For our model, we chose two hidden layers with 8 neurons in the first and 5 neurons in the second. We chose relu activation function for the input layers and sigmoid for the output layer. I really wasn't sure where to begin with this, so I went with those parameters as that was what was demonstrated to us in our modules. It turned out to be a decent model overall, with an accuracy of 72.4%.
+<img width="1028" alt="original_model" src="https://user-images.githubusercontent.com/96350388/168454939-2530eeb3-5a38-420b-bcff-78cae8d8d786.png">
+
+<img width="487" alt="original_results" src="https://user-images.githubusercontent.com/96350388/168454946-021656d0-78ed-4ed4-a380-44b550668a74.png">
+
 - Were you able to achieve the target model performance?
     - I was not able to achieve the target model performance of 75%, despite three seperate attempts to optimize my model
 - What steps did you take to try and increase model performance?
-    - In my first attempt to increase model performance, I created six hidden layers instead of just two, and I gave each layer 6, 6, 3, 3, 3, and 3 neurons, respectively. This hardly had any impact on the model, only increasing the accuracy to 72.6%.
-    - In my second attempt to increase model performance, I reduced the hidden layers back to just two, but increased the amount of neurons in each hidden layer to 14 and 8, respectively. This also hardly made any impact on the model, as the accuracy for this attempt was 72.5%
-    - In my third attempt to increase model performance, I increased the hidden layersswitched the activation function from "relu" to "leaky_relu." Once again, the results were underwhelming, and the accuracy for this model was 72.8%
 
+In my first attempt to increase model performance, I created six hidden layers instead of just two, and I gave each layer 6, 6, 3, 3, 3, and 3 neurons, respectively. This hardly had any impact on the model, only increasing the accuracy to 72.6%.
+
+<img width="975" alt="attempt_1_model" src="https://user-images.githubusercontent.com/96350388/168454950-66fb21bc-ae1f-4221-8754-260ad24fb41f.png">
+
+<img width="484" alt="attempt_1_results" src="https://user-images.githubusercontent.com/96350388/168454960-9a555d65-25bc-4aec-bc45-d8a305cfd7f3.png">
+In my second attempt to increase model performance, I reduced the hidden layers back to just two, but increased the amount of neurons in each hidden layer to 14 and 8, respectively. This also hardly made any impact on the model, as the accuracy for this attempt was 72.5%
+    
+<img width="1017" alt="attempt_2_model" src="https://user-images.githubusercontent.com/96350388/168454989-fdb59f0f-9f20-48c2-8a5e-167780a30790.png">
+
+<img width="488" alt="attempt_2_results" src="https://user-images.githubusercontent.com/96350388/168454993-35cb934d-c1da-4fe5-8d00-c728c6cc1773.png">
+In my third attempt to increase model performance, I increased the hidden layersswitched the activation function from "relu" to "leaky_relu." Once again, the results were underwhelming, and the accuracy for this model was 72.8%
+    
+<img width="1051" alt="attempt_3_model" src="https://user-images.githubusercontent.com/96350388/168455002-af1c9486-4f1f-4ec9-91c8-e674eb19f9e7.png">
+
+<img width="493" alt="attempt_3_results" src="https://user-images.githubusercontent.com/96350388/168455008-07f30f43-57c9-40dd-af88-b1a9454abd15.png">
 
 
 ## Summary
