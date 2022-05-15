@@ -15,9 +15,11 @@ Using Pandas and the Scikit-Learn’s StandardScaler(), I preprocessed the datas
 
 Data Preprocessing
 - What variable(s) are considered the target(s) for your model?
-    
+    "IS_SUCCESSFUL" was our target for the model, as we wanted to know if charity applicants were considered successful or not
 - What variable(s) are considered to be the features for your model?
+    The following variables were all considered as features for my model: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, INCOME_AMT, ORGANIZATION, SPECIAL_CONSIDERATIONS, STATUS, ASK_AMT. Each had to be modified from its original categorical format into integers so the model can process them.
 - What variable(s) are neither targets nor features, and should be removed from the input data?
+    EID and NAME were both dropped from the dataset as they were not targets nor features
 
 Compiling, Training, and Evaluating the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
